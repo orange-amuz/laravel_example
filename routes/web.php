@@ -16,3 +16,5 @@ Route::middleware([
         BlogMiddleware::class,
     ])->get('/blog', [AppController::class, 'index'])->name('blog');
 });
+
+Route::get('/org', [AppController::class, 'org'])->name('org');
